@@ -26,7 +26,7 @@ body {
 #hero-content {
 	text-align: center;
     padding: 152px 0px;
-    font-size: 5em;
+    font-size: 4.5em;
 }
 #container {
     text-align: center;
@@ -167,4 +167,5 @@ body {
     border: 2px solid;
     border-radius: 5px;
     padding: 5px 10px;
-/* background-color: white;
+    /* background-color: white;*/
+}
