@@ -22,11 +22,17 @@ body {
     float: right;
     padding: 25px;
     background-color: #8ed0bd;
+    color: white;
 }
 #hero-content {
 	text-align: center;
     padding: 152px 0px;
     font-size: 4.5em;
+}
+@media all and (max-width: 555px) {
+    #hero-content {
+        font-size: 4em;
+    }
 }
 #container {
     text-align: center;
@@ -132,13 +138,14 @@ body {
     line-height: 40px;
     padding: 30px;
     /*font-size: 1.2em;*/
+    background-color: rgba(0,0,0,0.5);
 }
 #resume {
     position: absolute;
-    bottom: 0px;
-    right: 7%;
-    color: white;
-    height: 50%;
+		bottom: 0px;
+		right: 0px;
+		color: white;
+		padding: 30px 25px;
 }
 @media all and (max-width: 555px) {
     #resume {
@@ -146,7 +153,6 @@ body {
         bottom: 0px;
         right: 10%;
 		color: #626366;
-		height: 50%;
 		text-align: center;
     }
     .left {
@@ -159,13 +165,70 @@ body {
 		/*font-size: 1.2em;*/
 		text-align: center;
 		margin: 0px auto;
+		background-color: #FFFFFF;
     }
-
+    .link {
+        color: #6b4d83;
+        text-decoration: none;
+        border: 2px solid;
+        border-radius: 5px;
+        padding: 7px 15px;
+        margin-left: 5px;
+    }
+    #resume a:visited {
+        color: #626366;
+    }
 }
 .link {
     text-decoration: none;
     border: 2px solid;
     border-radius: 5px;
-    padding: 5px 10px;
-    /* background-color: white;*/
+    padding: 7px 15px;
+    color: white;
+    margin-left: 5px;
+}
+a {
+    text-decoration: none;
+}
+.nav-item a {
+    color: white;
+}
+.nav-item a:visited {
+    color: #FFFFFF;
+}
+#info {
+    background-color: #8ed0bd;
+    padding: 20px 25px;
+    color: #626366;
+    position: relative
+}
+#email {
+    padding: 10px 0px;
+    position: absolute;
+    right: 25px;
+    top: 0px;
+}
+#addr {
+    margin-left: 5px;
+    color: white;
+}
+#connect {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+#connect a {
+    color: #626366;
+}
+#connect a:visited {
+    color: #626366;
+}
+#linkedin {
+    margin-left: 10px;
+}
+#connect a:hover {
+    color:#FFFFFF;
+}
+.underline {
+    text-decoration: underline;
 }
