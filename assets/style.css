@@ -140,20 +140,19 @@ body {
     /*font-size: 1.2em;*/
     background-color: rgba(0,0,0,0.5);
 }
-#resume {
-    position: absolute;
-		bottom: 0px;
-		right: 0px;
-		color: white;
-		padding: 30px 25px;
-}
 @media all and (max-width: 555px) {
     #resume {
         position: static;
         bottom: 0px;
-        right: 10%;
+        /*right: 10%;*/
 		color: #626366;
 		text-align: center;
+    }
+    .gray a {
+        color: #626366;
+    }
+    .gray a:visited {
+        color: #626366;
     }
     .left {
         position: static;
@@ -175,9 +174,13 @@ body {
         padding: 7px 15px;
         margin-left: 5px;
     }
-    #resume a:visited {
-        color: #626366;
-    }
+}
+#resume {
+    position: absolute;
+    bottom: 0px;
+	right: 0px;
+	color: white;
+	padding: 30px 25px;
 }
 .link {
     text-decoration: none;
