@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: Lato, sans-serif;
+    font-family: Open Sans, sans-serif; /* Lato */
 }
 .body-bg {
     background-color: #FFFFFF;
@@ -80,6 +80,7 @@ body {
     line-height: 36px;
     width: 40%;
     padding-left: 50%;
+    font-weight: 300px;
 }
 #title-content {
     display: inline-block;
@@ -140,7 +141,21 @@ body {
     /*font-size: 1.2em;*/
     background-color: rgba(0,0,0,0.5);
 }
-
+#resume {
+    position: absolute;
+    bottom: 0px;
+	right: 0px;
+	color: white;
+	padding: 30px 25px;
+}
+.link {
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 7px 15px;
+    color: white;
+    margin-left: 5px;
+}
 /* ===================== Mobile ======================== */
 @media all and (max-width: 555px) {
     .full-width {
@@ -183,21 +198,7 @@ body {
     }
 }
 /* ==================================================== */
-#resume {
-    position: absolute;
-    bottom: 0px;
-	right: 0px;
-	color: white;
-	padding: 30px 25px;
-}
-.link {
-    text-decoration: none;
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 7px 15px;
-    color: white;
-    margin-left: 5px;
-}
+
 a {
     text-decoration: none;
 }
