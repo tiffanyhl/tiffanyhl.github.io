@@ -92,7 +92,8 @@ body {
      color: #8ed0bd;
 }
 .tab {
-    border: 3px solid #e5e4e3;
+    border-top: 3px solid #e5e4e3;
+    border-bottom: 3px solid #e5e4e3;
     padding: 10px 50px;
     color: #6b4d83;
     font-size: 1.1em;
@@ -103,26 +104,40 @@ body {
     width: 200px;
     display: block;
     margin: 0px auto;
-    margin-top: 45px;
     border: 3px solid #8ed0bd;
 }
-.section {
-    padding-bottom: 45px;
+.border-color {
+    border: 3px solid #FFFFFF;
 }
+.section-color {
+    background-color: #8ed0bd;
+    transition-duration: 1s;
+}
+/* 
+.section:hover {
+    background-color: #8ed0bd;
+    transition-duration: 1s;
+}
+ */
 .section-content {
     margin: 0px auto;
     width: 80%;
+    padding-top: 45px;
 }
 .desc {
     /*display: inline-block; */
     line-height: 30px;
-    padding-top: 50px;
+    padding-top: 45px;
     /* margin-left: 10%; */
     width: 50%;
     height: auto;
     color: #626366;
     text-align: center;
     margin: 0px auto;
+    padding-bottom: 45px;
+}
+.desc-color {
+    color: #6b4d83;
 }
 .background {
     width: 100%;
@@ -133,31 +148,40 @@ body {
 }
 .left {
     position: absolute;
-    bottom: 0px;
-    color: white;
-    width: 40%;
-    line-height: 40px;
-    padding: 30px;
-    /*font-size: 1.2em;*/
-    background-color: rgba(0,0,0,0.5);
+	bottom: 45%;
+	color: white;
+	width: 330px;
+	line-height: 40px;
+	padding: 30px;
+	/* font-size: 1.2em; */
+	/* background-color: rgba(0,0,0,0.5); */
+	background-color: #6b4d83;
+	font-weight: 300;
+}
+.hide {
+    left: -100%;
 }
 #resume {
     position: absolute;
-    bottom: 0px;
-	right: 0px;
-	color: white;
+	bottom: -75px;
+	left: 0px;
+	color: #8ed0bd;
 	padding: 30px 25px;
+	background-color: #444;
+	font-weight: 300;
+	width: 70%;
+	text-align: center;
 }
 .link {
     text-decoration: none;
-    border: 2px solid;
-    border-radius: 5px;
-    padding: 7px 15px;
-    color: white;
-    margin-left: 5px;
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 10px 10px;
+	color: white;
+	margin-left: 5px;
 }
 /* ===================== Mobile ======================== */
-@media all and (max-width: 555px) {
+@media all and (max-width: 826px) {
     .full-width {
         position: fixed;
         z-index: -1;
@@ -167,8 +191,10 @@ body {
         position: static;
         bottom: 0px;
         /*right: 10%;*/
-		color: #626366;
+		/* color: #626366; */
 		text-align: center;
+		background-color: #FFFFFF;
+		margin: 0px auto;
     }
     .gray a {
         color: #626366;
@@ -243,4 +269,12 @@ a {
 }
 .underline {
     text-decoration: underline;
+}
+@media all and (max-width: 430px) {
+    #email {
+        position: static;
+    }
+    #connect {
+        position: static;
+    }
 }
