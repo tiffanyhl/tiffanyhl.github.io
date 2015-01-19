@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/custom.css">
+    <!-- Font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="assets/jquery.waypoints.min.js"></script>
+    <script src="assets/custom.js"></script>
+    
+    </head>
+    
+    <body>
+        <div class="jumbotron hero-bg">
+                <h1 id="hero-title">The DesignExchange</h1>
+                <h3>Methods in Case Studies</h3>
+                <h5>Tiffany Lam</h5>
+        </div> 
+        <div class="container-fluid">
+            <p id="intro" class="lead text-center">
+            The DesignExchange is a site where designers of all skill levels can join an online community of designers in sharing and discussing ideas about all types of design projects. The site can be used to <strong>gather information</strong>, <strong>learn good practices and methods</strong> via case studies, and <strong>form discussions</strong> around content on the site.
+            </p>
+            <img id="dx" class="img-center" src="assets/images/banner.png">
+            <div>
+                <h2 id="sec-title" class="text-center">Let&#8217s take a closer look at case studies.<h2>
+            </div>
+            <div id="case-bg" class="invis">
+                <h2 class="abs-text">
+                    How would a user know the various design methods utilized in a particular case study?
+                </h2>
+            </div>
+            <div id="process" class="container">
+                <div id="row-1" class="row left">
+                    <div class=" vert-align sec-text col-sm-6">
+                This has been the focus of my work for Fall 2014. This semester, I looked at case studies from a multitude of sites. Each case study page was populated with a problem, process, and outcome taken from the original site. The methods used in the study, however, were not always as apparent.  
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="thumbnail"><img class="img-resize" src="assets/images/single_case.png"></div>
+                    </div> 
+                </div>
+                <div id="row-2" class="row right">
+                    <div class="col-sm-6">
+                        <div class="thumbnail"><img class="img-resize" src="assets/images/case_overview.png"></div>
+                    </div>
+                    <div id="sec-2" class="sec-text col-sm-6">
+                        Methods were generated from the existing database using Sunspot, a feature of the Solr search engine for Ruby objects. Sunspot was included in The DesignExchange application in order to match key words or phrases in a case study to those in the methods database. Some examination of other APIs that provided the type of search needed was also done, and in the future, one of the alternatives may be implemented.
+                    </div>
+                </div>
+                <div id="row-3" class="row left">
+                    <div id="sec-3" class="sec-text col-sm-6">
+                The methods produced by the search were placed under a "Related Methods" section. I then confirmed whether the generated method was actually used in the case study, included methods I noticed were used but were not generated, and finally tagged the case study with the appropriate design methods. These tags are now saved in the database and will appear when a user visits a case study page and looks at the methods used in that study. 
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="thumbnail"><img class="img-resize" src="assets/images/methods.png"></div>
+                    </div> 
+                </div>
+            </div>
+            <div id="conclusion" class="full-width">
+                <h1 class="green">In January of 2015...</h1>
+                <p id="conclusion-text" class="text-center lead">The DesignExchange site will launch with a new look! After my work with case studies, I created a feedback form feature for the site which will allow initial users to offer feedback on the site’s usability, bugs, etc. My next steps will be to implement a discussion forum for the site.</p>
+                <h2 class="text-center"><strong>Be sure to check out The DesignExchange when the site launches!</strong></h2>
+            </div>
+        </div>
+    </body>
+</html>
